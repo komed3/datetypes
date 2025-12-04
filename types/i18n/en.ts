@@ -30,3 +30,10 @@ export const WeekdaysShort = [
 ] as const;
 
 export type WeekdayName = WeekdayFull | WeekdayShort;
+
+// --- Ordinal Day Suffix ---------------------------------------------------
+
+export type OrdinalSuffix = ( typeof OrdinalSuffix )[ number ];
+export const OrdinalSuffix = [ 'st', 'nd', 'rd', 'th' ] as const;
+
+export type OrdinalDay = `${number}${OrdinalSuffix}`;
