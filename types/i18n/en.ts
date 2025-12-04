@@ -1,3 +1,5 @@
+// --- Months ---------------------------------------------------------------
+
 export type MonthFull = ( typeof MonthsFull )[ number ];
 export const MonthsFull = [
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -11,3 +13,20 @@ export const MonthsShort = [
 ] as const;
 
 export type MonthName = MonthFull | MonthShort;
+
+// --- Weekdays -------------------------------------------------------------
+
+export type WeekdayFull = ( typeof WeekdaysFull )[ number ];
+export const WeekdaysFull = [
+    'Monday', 'Tuesday', 'Wednesday', 'Thursday',
+    'Friday', 'Saturday', 'Sunday'
+] as const;
+
+export type WeekdayShort = ( typeof WeekdaysShort )[ number ];
+export const WeekdaysShort = [
+    'Mon', 'Tue', 'Tues', 'Wed',
+    'Thu', 'Thur', 'Thurs', 'Fri',
+    'Sat', 'Sun'
+] as const;
+
+export type WeekdayName = WeekdayFull | WeekdayShort;
