@@ -24,9 +24,8 @@ export const WeekdaysFull = [
 
 export type WeekdayShort = ( typeof WeekdaysShort )[ number ];
 export const WeekdaysShort = [
-    'Mon', 'Tue', 'Tues', 'Wed',
-    'Thu', 'Thur', 'Thurs', 'Fri',
-    'Sat', 'Sun'
+    'Mon', 'Tue', 'Tues', 'Wed', 'Thu', 'Thur',
+    'Thurs', 'Fri', 'Sat', 'Sun'
 ] as const;
 
 export type WeekdayName = WeekdayFull | WeekdayShort;
@@ -37,3 +36,5 @@ export type OrdinalSuffix = ( typeof OrdinalSuffix )[ number ];
 export const OrdinalSuffix = [ 'st', 'nd', 'rd', 'th' ] as const;
 
 export type OrdinalDay = `${number}${OrdinalSuffix}`;
+
+// --- Time Components ------------------------------------------------------
